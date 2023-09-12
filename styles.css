@@ -8,6 +8,10 @@ h1 {
     font-size: 5em;
 }
 
+h2, h3, .scoreboard {
+    font-family: 'Kanit', sans-serif;
+}
+
 .options {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,17 +37,38 @@ h1 {
 .imgs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
     justify-items: center;
     align-items: center;
 }
 
-.scoreboard {
+.scoreboard-grid {
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px; 
     font-family: 'Kanit', sans-serif;
 }
 
-h2, h3, .scoreboard {
+.title {
+    grid-column: span 2;
+    text-align: center; 
+    align-self: center;
+    font-size: 3rem;
     font-family: 'Kanit', sans-serif;
 }
+
+.player-title,
+.computer-title {
+    text-align: center; 
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#player-score, #computer-score {
+    font-size: 4rem;
+}
+
+
+
