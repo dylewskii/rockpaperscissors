@@ -35,8 +35,21 @@ let playRound = function (playerSelection, computerSelection) {
 function updateScores(result) {
     if (result === "player") {
         playerScore++;
+        $("body").addClass("beat-computer"); // Flash green when player wins
+        setTimeout(function() {
+            $("body").removeClass("beat-computer");
+        }, 500); 
     } else if (result === "computer") {
         computerScore++;
+        $("body").addClass("beaten"); // Flash red when computer wins
+        setTimeout(function() {
+            $("body").removeClass("beaten");
+        }, 500); 
+    } else {
+        $("body").addClass("tie"); // Flash neutral when tied
+        setTimeout(function() {
+            $("body").removeClass("tie");
+        }, 500); 
     }
 
     $("#player-score").text(playerScore);

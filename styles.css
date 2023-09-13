@@ -63,12 +63,77 @@ h2, h3, .scoreboard {
     text-align: center; 
     font-family: 'Kanit', sans-serif;
     font-size: 2rem;
+}
+
+.player-title p, .computer-title p {
     text-decoration: underline;
 }
 
 #player-score, #computer-score {
     font-size: 4rem;
+    text-decoration: none;
 }
 
 
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.fa_custom {
+    color: black;
+}
+
+.fa-github {
+    margin-left: 10px;
+}
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Flashing */
+body.beaten {
+    animation: flashRed 1s alternate infinite;
+}
+
+body.beat-computer {
+    animation: flashGreen 1s alternate infinite;
+}
+
+body.tie {
+    animation: flashNeutral 1s alternate infinite;
+}
+
+@keyframes flashRed {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: #C09F6F; /* Change this to your default background color */
+    }
+}
+
+@keyframes flashGreen {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: #C09F6F; /* Change this to your default background color */
+    }
+}
+
+@keyframes flashNeutral {
+    0% {
+        background-color: #F9CE8E;
+    }
+    100% {
+        background-color: #C09F6F; /* Change this to your default background color */
+    }
+}
 

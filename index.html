@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Jon - Ken - Pon</h1>
+    <h1>Jan - Ken - Pon</h1>
 
     <div class="imgs">
         <img src="imgs/rock.svg" id="rock-img" width="100px" alt="rock">
@@ -28,7 +32,7 @@
     </div>
 
     <div class="scoreboard-grid">
-        <div class="title">SCORE</div>
+        <div class="title">---- SCORE ----</div>
         <div class="player-title">
             <p>PLAYER</p>
             <p id="player-score">0</p>
@@ -38,7 +42,16 @@
             <p id="computer-score">0</p>
         </div>
       </div>
-    
+
+    <footer class="footer">
+        <div class="footer-content left-content"></div>
+            <script>document.write(new Date().getFullYear())</script>
+            <p>Made by dyskio</p>
+            <a href="https://github.com/dyskio" target="_blank">
+                <i class="fa fa-github fa_custom" style="font-size:24px"></i>
+            </a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="scripts.js" charset="UTF-8"></script>
