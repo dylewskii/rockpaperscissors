@@ -34,13 +34,6 @@ h2, h3, .scoreboard {
     transform: translate(-2px, -2px);
 }
 
-.imgs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
 .scoreboard-grid {
     margin-top: 2rem;
     display: grid;
@@ -72,6 +65,14 @@ h2, h3, .scoreboard {
 #player-score, #computer-score {
     font-size: 4rem;
     text-decoration: none;
+}
+
+/* Images */
+.imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 
