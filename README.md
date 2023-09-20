@@ -5,5 +5,5 @@ The game provides a player with three options - rock, paper & scissors. The play
 
 Languages used: HTML/CSS/Javascript
 
-Live - https://dyskio.github.io/rockpaperscissors/
+Live - https://dylewskii.github.io/rockpaperscissors/
 
